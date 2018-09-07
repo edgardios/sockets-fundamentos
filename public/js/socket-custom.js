@@ -9,12 +9,12 @@ socket.on('disconnect', function() {
 });
 
 //.emit es para emitir informacion
-socket.emit('enviarMensaje', {
-    usuario: 'Edgardo',
-    mensaje: 'Hola Mundo'
-}, function(resp) {
-    console.log('Respuesta server:', resp);
-});
+// socket.emit('enviarMensaje', {
+//     usuario: 'Edgardo',
+//     mensaje: 'Hola Mundo'
+// }, function(resp) {
+//     console.log('Respuesta server:', resp);
+// });
 
 socket.on('enviarMensaje', function(mensaje) {
     console.log('Servidor', mensaje);
